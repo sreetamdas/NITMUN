@@ -2464,16 +2464,17 @@
 /* Modal */
 
 #queryModal {
-    background-color: #1ffaaa;
+    background-color: #1c1d26;
     width: 100%;
-    height: 3.5cm;
-    border-color: #1ffaaa;
+    height: 9cm;
+    border-color: #1c1d26;
+    color: white;
     
    
 }
 
-#queryModal h2{
-     color: #272833;
+#queryModal h4{
+     color: white;    
     font-weight: 300; 
     
 }

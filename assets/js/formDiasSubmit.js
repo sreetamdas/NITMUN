@@ -21,6 +21,7 @@ $(document).ready(function(){
                         previouslyAttended = "No";
                     }
                     var experience = encodeURIComponent($('#experience').val());
+                    var HP_Q = encodeURIComponent($('#HP_Q').val());
                     var baseURL = 'https://docs.google.com/forms/d/1oLrTFZ-wBA9QxCC8RT9Cc1rPUSAMW_4lwyHgrbVSDcU/formResponse?';
                     var submitRef = '&submit=Submit';
                     var nameID = "entry.1662770628=";
@@ -37,8 +38,9 @@ $(document).ready(function(){
                     var reasonID = "&entry.1812301822=";
                     var previouslyAttendedID = "&entry.862281140=";
                     var experienceID = "&entry.1458061965=";
+                    var HP_QID = "&entry.794599704=";
                     
-                    var submitURL = (baseURL + nameID + name + emailID + email + contactNumberID + contactNumber + collegeID + college + courseID + course + yearID + year + cityID + city + emNameID + emName + emRelationID + emRelation + emContactID + emContact + councilID + council + reasonID + reason + previouslyAttendedID + previouslyAttendedID + previouslyAttended + experienceID + experience + submitRef);
+                    var submitURL = (baseURL + nameID + name + emailID + email + contactNumberID + contactNumber + collegeID + college + courseID + course + yearID + year + cityID + city + emNameID + emName + emRelationID + emRelation + emContactID + emContact + councilID + council + reasonID + reason + previouslyAttendedID + previouslyAttended + experienceID + experience + HP_QID + HP_Q + submitRef);
                     
         
                     if((name!="")&&(email!="")&&(contactNumber!="")&&(college!="")&&(college!="")&&(course!="")&&(city!="")&&(emContact!="")) {
@@ -64,16 +66,57 @@ $(document).ready(function(){
     
 $(document).ready(function() {
 
-    var text_max = 1700;
-    $('#divSOP').html(text_max + ' characters remaining');
+    var text_max = 700;
+    $('#divHP_Q').html(text_max + ' characters remaining');
 
-    $('#SOP').keyup(function() {
-        var text_length = $('#SOP').val().length;
+    $('#HP_Q').keyup(function() {
+        var text_length = $('#HP_Q').val().length;
         var text_remaining = text_max - text_length;
 
-        $('#divSOP').html(text_remaining + ' characters remaining');
+        $('#divHP_Q').html(text_remaining + ' characters remaining');
     }); 
     
+});
+$(document).ready(function() {
+
+    var text_max = 700;
+    $('#divreason').html(text_max + ' characters remaining');
+
+    $('#reason').keyup(function() {
+        var text_length = $('#reason').val().length;
+        var text_remaining = text_max - text_length;
+
+        $('#divreason').html(text_remaining + ' characters remaining');
+    }); 
+    
+});
+$(document).ready(function() {
+
+    var text_max = 700;
+    $('#divexperience').html(text_max + ' characters remaining');
+
+    $('#experience').keyup(function() {
+        var text_length = $('#experience').val().length;
+        var text_remaining = text_max - text_length;
+
+        $('#divexperience').html(text_remaining + ' characters remaining');
+    }); 
+    
+});
+
+$(document).ready(function () {
+    $("#council").on({
+    change: function() {
+        var pref = ($(this).val());
+        var dialog = document.getElementById('queryModal');  
+        if(pref == "HP") {              
+            dialog.show();
+        }
+        else {
+            dialog.close();
+        }
+    }
+    });
 });
     
    

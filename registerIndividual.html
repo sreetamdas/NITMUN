@@ -223,8 +223,10 @@
 										<div class="7u$ 12u$(medium)">
 											<textarea name="experience" id="experience" placeholder="Previous experience in MUNs" rows="6" maxlength="500"></textarea>
 										</div>
-                                        <div>
-                                            
+                                        <div class="4u 0u$(xsmall)"></div>
+                                        <div class="4u$ 12u$(xsmall) no-border">
+                                            <input type="checkbox" id="TCs" name="TCs" required>
+											<label for="TCs">I hereby agree to the <a href="Terms&Conditions.html">Terms & Conditions</a>.</label>
                                         </div>
 										<div class="12u$" align="center">
 											<ul class="actions">
@@ -258,14 +260,7 @@
 		</div>
 
 		<!-- Scripts -->
-            <script>
-                    var x = document.getElementById("council");
-                    var checkFictional = x.options[x.selectedIndex].value;
-                
-                    if(checkFictional == "Fictional") {
-                        document.delegateReg.country1.options.length=0;
-                    }
-            </script>
+            
             <script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
