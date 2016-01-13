@@ -324,21 +324,21 @@ $(document).ready(function(){
 	});
 });
 
-$(document).ready(function(){
+$(document).ready(function(){/*
         var divs = $('div[id^="content-"]').hide(),
             i = 0;
 
         (function cycle() { 
 
             divs.eq(i).fadeIn(400)
-                      .delay(1000)
+                      .delay(5000)
                       .fadeOut(400, cycle);
 
             i = ++i % divs.length;
 
-})();
+})();*/
     
-        var images=new Array('https://scontent-sin1-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10988939_910265445680446_8726206301334668530_n.jpg?oh=cda3067ec8649f6c8bc2c1a2705a7e20&oe=5749051C','https://scontent-sin1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/11034252_910266365680354_1195136261359069827_n.jpg?oh=fb5e83379f7b1575450634f49fb8da72&oe=57008420','https://scontent-sin1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/11009137_910210615685929_1435945382525609822_n.jpg?oh=4dca93e518411283e5292c154189e176&oe=571445E3');
+        var images=new Array('images/Accounts_1.jpg','images/Accounts_2.jpg','images/Accounts_3.jpg','images/Accounts_4.jpg','images/Accounts_5.jpg');
 var nextimage=0;
 doSlideshow();
 
@@ -346,7 +346,7 @@ function doSlideshow(){
     if(nextimage>=images.length){nextimage=0;}
     $('.cycle_images')
     .css('background-image','url("'+images[nextimage++]+'")')
-    .fadeIn(30,function(){
+    .fadeIn(500,function(){
         setTimeout(doSlideshow,5000);
     });
 }
