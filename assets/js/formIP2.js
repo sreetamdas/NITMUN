@@ -16,7 +16,7 @@ $(document).ready(function(){
                     var submitRef = '&submit=Submit';
                     var submitSOP = (IP_URL + Pathankot_ID + Pathankot + Paris_ID + Paris + nameID + name + emailID + email + submitRef);
         
-                    
+                    if((name!="")&&(email!="")) {
                 
                         console.log(submitSOP);
                         $(this)[0].action=submitSOP;
@@ -33,7 +33,7 @@ $(document).ready(function(){
                         };
                         });
 
-                    
+                    }
                 }
     $("#delegateReg").click(submit);
     

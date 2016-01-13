@@ -13,16 +13,8 @@ $(document).ready(function(){
                     var emContact = encodeURIComponent($('#emContact').val());
                     var council = encodeURIComponent($('#council').val());
                     var reason = encodeURIComponent($('#reason').val());
-                    var previouslyAttended = document.getElementById("previouslyAttended");
-                    if(previouslyAttended.checked == true) {
-                        previouslyAttended = "Yes";
-                    }
-                    else {
-                        previouslyAttended = "No";
-                    }
                     var experience = encodeURIComponent($('#experience').val());
-                    var HP_Q = encodeURIComponent($('#HP_Q').val());
-                    var baseURL = 'https://docs.google.com/forms/d/1oLrTFZ-wBA9QxCC8RT9Cc1rPUSAMW_4lwyHgrbVSDcU/formResponse?';
+                    var baseURL = 'https://docs.google.com/forms/d/1pF6nQqRTHxyQyXVG0Y7pSUKR_NiSKx8-mbfTFMvog0s/formResponse?';
                     var submitRef = '&submit=Submit';
                     var nameID = "entry.1662770628=";
                     var emailID = "&entry.644809204=";
@@ -36,11 +28,9 @@ $(document).ready(function(){
                     var emContactID = "&entry.2021833209=";
                     var councilID = "&entry.146176427=";
                     var reasonID = "&entry.1812301822=";
-                    var previouslyAttendedID = "&entry.862281140=";
                     var experienceID = "&entry.1458061965=";
-                    var HP_QID = "&entry.794599704=";
                     
-                    var submitURL = (baseURL + nameID + name + emailID + email + contactNumberID + contactNumber + collegeID + college + courseID + course + yearID + year + cityID + city + emNameID + emName + emRelationID + emRelation + emContactID + emContact + councilID + council + reasonID + reason + previouslyAttendedID + previouslyAttended + experienceID + experience + HP_QID + HP_Q + submitRef);
+                    var submitURL = (baseURL + nameID + name + emailID + email + contactNumberID + contactNumber + collegeID + college + courseID + course + yearID + year + cityID + city + emNameID + emName + emRelationID + emRelation + emContactID + emContact + councilID + council + reasonID + reason + experienceID + experience +  submitRef);
                     
         
                     if((name!="")&&(email!="")&&(contactNumber!="")&&(college!="")&&(college!="")&&(course!="")&&(city!="")&&(emContact!="")) {
@@ -51,7 +41,7 @@ $(document).ready(function(){
                         
                         $("iframe").load(function(){
                             
-                            window.location="SOP.html";
+                            window.location="IPQ1.html";
                         
                         });
 
@@ -65,20 +55,3 @@ $(document).ready(function(){
 });
     
 
-
-$(document).ready(function () {
-    $("#council").on({
-    change: function() {
-        var pref = ($(this).val());
-        var dialog = document.getElementById('queryModal2');  
-        if(pref == "HP") {              
-            dialog.show();
-        }
-        else {
-            dialog.close();
-        }
-    }
-    });
-});
-    
-   

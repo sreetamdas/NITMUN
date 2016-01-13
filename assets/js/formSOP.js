@@ -13,7 +13,7 @@ $(document).ready(function(){
                     var submitRef = '&submit=Submit';
                     var submitSOP = (SOP_URL + SOP_ID + SOP + nameID + name + emailID + email + submitRef);
         
-                    
+                    if((name!="")&&(email!="")) {
                 
                         console.log(submitSOP);
                         $(this)[0].action=submitSOP;
@@ -30,7 +30,7 @@ $(document).ready(function(){
                             dialog.close();
                         };
                         });
-
+                    }
                     
                 }
     $("#delegateReg").click(submit);

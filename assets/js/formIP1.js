@@ -16,7 +16,7 @@ $(document).ready(function(){
                     var submitRef = '&submit=Submit';
                     var submitSOP = (IP_URL + Delhi_ID + Delhi + Modi_ID + Modi + nameID + name + emailID + email + submitRef);
         
-                    
+                    if((name!="")&&(email!="")) {
                 
                         console.log(submitSOP);
                         $(this)[0].action=submitSOP;
@@ -25,7 +25,7 @@ $(document).ready(function(){
                             window.location="IPQ2.html";
                         
                         });
-                    
+                    }
                 }
     $("#delegateReg").click(submit);
     
