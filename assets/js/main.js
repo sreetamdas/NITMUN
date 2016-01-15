@@ -318,9 +318,7 @@ $(document).ready(function(){
 
 	    $('html, body').stop().animate({
 	        'scrollTop': $target.offset().top
-	    }, 1400, 'swing', function () {
-	        window.location.hash = target;
-	    });
+	    }, 1400, 'swing');
 	});
 });
 
