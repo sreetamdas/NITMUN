@@ -13,19 +13,8 @@ $(document).ready(function(){
                     var emContact = encodeURIComponent($('#emContact').val());
                     var council = encodeURIComponent($('#council').val());
                     var reason = encodeURIComponent($('#reason').val());
-                    var previouslyAttended = document.getElementById("previouslyAttended");
-                    if(previouslyAttended.checked == true) {
-                        previouslyAttended = "Yes";
-                    }
-                    else {
-                        previouslyAttended = "No";
-                    }
                     var experience = encodeURIComponent($('#experience').val());
-<<<<<<< HEAD
-                    var HP_Q = encodeURIComponent($('#HP_Q').val());
-=======
->>>>>>> master
-                    var baseURL = 'https://docs.google.com/forms/d/1oLrTFZ-wBA9QxCC8RT9Cc1rPUSAMW_4lwyHgrbVSDcU/formResponse?';
+                    var baseURL = 'https://docs.google.com/forms/d/1pF6nQqRTHxyQyXVG0Y7pSUKR_NiSKx8-mbfTFMvog0s/formResponse?';
                     var submitRef = '&submit=Submit';
                     var nameID = "entry.1662770628=";
                     var emailID = "&entry.644809204=";
@@ -39,16 +28,9 @@ $(document).ready(function(){
                     var emContactID = "&entry.2021833209=";
                     var councilID = "&entry.146176427=";
                     var reasonID = "&entry.1812301822=";
-                    var previouslyAttendedID = "&entry.862281140=";
                     var experienceID = "&entry.1458061965=";
-<<<<<<< HEAD
-                    var HP_QID = "&entry.794599704=";
                     
-                    var submitURL = (baseURL + nameID + name + emailID + email + contactNumberID + contactNumber + collegeID + college + courseID + course + yearID + year + cityID + city + emNameID + emName + emRelationID + emRelation + emContactID + emContact + councilID + council + reasonID + reason + previouslyAttendedID + previouslyAttended + experienceID + experience + HP_QID + HP_Q + submitRef);
-=======
-                    
-                    var submitURL = (baseURL + nameID + name + emailID + email + contactNumberID + contactNumber + collegeID + college + courseID + course + yearID + year + cityID + city + emNameID + emName + emRelationID + emRelation + emContactID + emContact + councilID + council + reasonID + reason + previouslyAttendedID + previouslyAttendedID + previouslyAttended + experienceID + experience + submitRef);
->>>>>>> master
+                    var submitURL = (baseURL + nameID + name + emailID + email + contactNumberID + contactNumber + collegeID + college + courseID + course + yearID + year + cityID + city + emNameID + emName + emRelationID + emRelation + emContactID + emContact + councilID + council + reasonID + reason + experienceID + experience +  submitRef);
                     
         
                     if((name!="")&&(email!="")&&(contactNumber!="")&&(college!="")&&(college!="")&&(course!="")&&(city!="")&&(emContact!="")) {
@@ -59,7 +41,7 @@ $(document).ready(function(){
                         
                         $("iframe").load(function(){
                             
-                            window.location="SOP.html";
+                            window.location="IPQ1.html";
                         
                         });
 
@@ -72,36 +54,4 @@ $(document).ready(function(){
     
 });
     
-<<<<<<< HEAD
 
-
-$(document).ready(function () {
-    $("#council").on({
-    change: function() {
-        var pref = ($(this).val());
-        var dialog = document.getElementById('queryModal2');  
-        if(pref == "HP") {              
-            dialog.show();
-        }
-        else {
-            dialog.close();
-        }
-    }
-    });
-=======
-$(document).ready(function() {
-
-    var text_max = 1700;
-    $('#divSOP').html(text_max + ' characters remaining');
-
-    $('#SOP').keyup(function() {
-        var text_length = $('#SOP').val().length;
-        var text_remaining = text_max - text_length;
-
-        $('#divSOP').html(text_remaining + ' characters remaining');
-    }); 
-    
->>>>>>> master
-});
-    
-   

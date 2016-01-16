@@ -2424,7 +2424,10 @@
 		.icon.major {
 			background: #272833;
 			border-radius: 100%;
+<<<<<<< HEAD
+=======
 			cursor: default;
+>>>>>>> master
 			display: inline-block;
 			height: 6em;
 			line-height: 6em;
@@ -2468,16 +2471,42 @@
     width: 100%;
     height: 3.5cm;
     border-color: #1ffaaa;
+<<<<<<< HEAD
+    color: #272833;
+=======
+>>>>>>> master
     
    
 }
 
 #queryModal h2{
+<<<<<<< HEAD
+     color: #272833;    
+    font-weight: 300; 
+    
+}
+#queryModal2 {
+    background-color: #1c1d26;
+    width: 100%;
+    height: 9cm;
+    border-color: #1c1d26;
+    color: white;
+    
+   
+}
+
+#queryModal2 h4{
+     color: white;    
+    font-weight: 300; 
+    
+}
+=======
      color: #272833;
     font-weight: 300; 
     
 }
 
+>>>>>>> master
 
 
 
@@ -3372,11 +3401,14 @@
     display: inline-flex;
 }
 
+<<<<<<< HEAD
+=======
 .fest-logos {
     background-image: none; !important
     z-index: 10003;
 }
 
+>>>>>>> master
 
 /* Banner */
 

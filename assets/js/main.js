@@ -318,6 +318,13 @@ $(document).ready(function(){
 
 	    $('html, body').stop().animate({
 	        'scrollTop': $target.offset().top
+<<<<<<< HEAD
+	    }, 1400, 'swing');
+	});
+});
+
+$(document).ready(function(){/*
+=======
 	    }, 1400, 'swing', function () {
 	        window.location.hash = target;
 	    });
@@ -325,20 +332,31 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+>>>>>>> master
         var divs = $('div[id^="content-"]').hide(),
             i = 0;
 
         (function cycle() { 
 
             divs.eq(i).fadeIn(400)
+<<<<<<< HEAD
+                      .delay(5000)
+=======
                       .delay(1000)
+>>>>>>> master
                       .fadeOut(400, cycle);
 
             i = ++i % divs.length;
 
+<<<<<<< HEAD
+})();*/
+    
+        var images=new Array('images/Accounts_1.jpg','images/Accounts_2.jpg','images/Accounts_3.jpg','images/Accounts_4.jpg','images/Accounts_5.jpg');
+=======
 })();
     
         var images=new Array('https://scontent-sin1-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10988939_910265445680446_8726206301334668530_n.jpg?oh=cda3067ec8649f6c8bc2c1a2705a7e20&oe=5749051C','https://scontent-sin1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/11034252_910266365680354_1195136261359069827_n.jpg?oh=fb5e83379f7b1575450634f49fb8da72&oe=57008420','https://scontent-sin1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/11009137_910210615685929_1435945382525609822_n.jpg?oh=4dca93e518411283e5292c154189e176&oe=571445E3');
+>>>>>>> master
 var nextimage=0;
 doSlideshow();
 
@@ -346,7 +364,11 @@ function doSlideshow(){
     if(nextimage>=images.length){nextimage=0;}
     $('.cycle_images')
     .css('background-image','url("'+images[nextimage++]+'")')
+<<<<<<< HEAD
+    .fadeIn(500,function(){
+=======
     .fadeIn(30,function(){
+>>>>>>> master
         setTimeout(doSlideshow,5000);
     });
 }

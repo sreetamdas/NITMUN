@@ -1,29 +1,27 @@
+
 $(document).ready(function(){
     function submit() {
                 
                     
                     
-                    var SOP_URL = "https://docs.google.com/forms/d/1JSKK3-LZnEq5fODN4yR_RcHK2sy5f_k_hypWu1UDf40/formResponse?";
-                    var SOP = encodeURIComponent($('#SOP').val());
-                    var SOP_ID = "entry.639628066=";
+                    var IP_URL = "https://docs.google.com/forms/d/1bjr09s-miH_ypqnhOPRopXbzUHQXh3BcROx9RwkpZwg/formResponse?";
+                    var Pathankot = encodeURIComponent($('#Pathankot').val());
+                    var Pathankot_ID = "entry.279533091=";
+                    var Paris = encodeURIComponent($('#Paris').val());
+                    var Paris_ID = "&entry.681787272=";
                     var name = encodeURIComponent($('#Name').val());
-                    var nameID = "&entry.403326776=";
-                    var emailID = "&entry.175718081=";
+                    var nameID = "&entry.347090093=";
+                    var emailID = "&entry.1859297775=";
                     var email = encodeURIComponent($('#email').val());
                     var submitRef = '&submit=Submit';
-                    var submitSOP = (SOP_URL + SOP_ID + SOP + nameID + name + emailID + email + submitRef);
+                    var submitSOP = (IP_URL + Pathankot_ID + Pathankot + Paris_ID + Paris + nameID + name + emailID + email + submitRef);
         
-<<<<<<< HEAD
                     if((name!="")&&(email!="")) {
-=======
-                    
->>>>>>> master
                 
                         console.log(submitSOP);
                         $(this)[0].action=submitSOP;
-                        
-                        
                         $("iframe").load(function(){
+                            
                             
 
                         var dialog = document.getElementById('queryModal');
@@ -34,12 +32,8 @@ $(document).ready(function(){
                             dialog.close();
                         };
                         });
-<<<<<<< HEAD
-                    }
-=======
 
->>>>>>> master
-                    
+                    }
                 }
     $("#delegateReg").click(submit);
     
@@ -47,19 +41,4 @@ $(document).ready(function(){
     
     
 });
-    
-$(document).ready(function() {
-
-    var text_max = 1700;
-    $('#divSOP').html(text_max + ' characters remaining');
-
-    $('#SOP').keyup(function() {
-        var text_length = $('#SOP').val().length;
-        var text_remaining = text_max - text_length;
-
-        $('#divSOP').html(text_remaining + ' characters remaining');
-    }); 
-    
-});
-    
    
