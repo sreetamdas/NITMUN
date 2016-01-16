@@ -11,13 +11,20 @@ $(document).ready(function(){
                     var emailID = "&entry.1775688829=";
                     var messageID = "&entry.444972923=";
                     
+<<<<<<< HEAD
                     if((name!="")&&(email!="")) {
+=======
+                    
+>>>>>>> master
                     var submitURL = (baseURL + nameID + name + emailID + email + messageID + message + submitRef);
                     console.log(submitURL);
                     $(this)[0].action=submitURL;
         
                     $('#queryModal').modal('show');
+<<<<<<< HEAD
                     }
+=======
+>>>>>>> master
                 }
     $("#queryForm").click(submit);
     

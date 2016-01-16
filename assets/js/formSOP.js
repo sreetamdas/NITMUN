@@ -13,7 +13,11 @@ $(document).ready(function(){
                     var submitRef = '&submit=Submit';
                     var submitSOP = (SOP_URL + SOP_ID + SOP + nameID + name + emailID + email + submitRef);
         
+<<<<<<< HEAD
                     if((name!="")&&(email!="")) {
+=======
+                    
+>>>>>>> master
                 
                         console.log(submitSOP);
                         $(this)[0].action=submitSOP;
@@ -30,7 +34,11 @@ $(document).ready(function(){
                             dialog.close();
                         };
                         });
+<<<<<<< HEAD
                     }
+=======
+
+>>>>>>> master
                     
                 }
     $("#delegateReg").click(submit);
