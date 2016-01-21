@@ -14,7 +14,7 @@ $(document).ready(function(){
         ValueB : 'Text B',
         ValueC : 'Text C'
     };
-    var prefListHRC = {
+    var prefListECOSOC = {
         USA : 'USA',
         ValueB : 'Text B',
         ValueC : 'Text C'
@@ -50,23 +50,23 @@ $(document).ready(function(){
             }
             
         }
-        else if(council == "HRC") {
+        else if(council == "ECOSOC") {
             
             var preference1 = document.getElementById('pref1');
             
             preference1.options.length = 0;
-            for(index in prefListHRC) {
-                preference1.options[preference1.options.length] = new Option(prefListHRC[index], index);
+            for(index in prefListECOSOC) {
+                preference1.options[preference1.options.length] = new Option(prefListECOSOC[index], index);
             }
             var preference2 = document.getElementById('pref2');
             preference2.options.length = 0;
-            for(index in prefListHRC) {
-                preference2.options[preference2.options.length] = new Option(prefListHRC[index], index);
+            for(index in prefListECOSOC) {
+                preference2.options[preference2.options.length] = new Option(prefListECOSOC[index], index);
             }
             var preference3 = document.getElementById('pref3');
             preference3.options.length = 0;
-            for(index in prefListHRC) {
-                preference3.options[preference3.options.length] = new Option(prefListHRC[index], index);
+            for(index in prefListECOSOC) {
+                preference3.options[preference3.options.length] = new Option(prefListECOSOC[index], index);
             }
             
         }
@@ -149,23 +149,23 @@ $(document).ready(function(){
             }
             
         }
-        else if(council == "HRC") {
+        else if(council == "ECOSOC") {
             
             var preference1 = document.getElementById('pref1_2');
             
             preference1.options.length = 0;
-            for(index in prefListHRC) {
-                preference1.options[preference1.options.length] = new Option(prefListHRC[index], index);
+            for(index in prefListECOSOC) {
+                preference1.options[preference1.options.length] = new Option(prefListECOSOC[index], index);
             }
             var preference2 = document.getElementById('pref2_2');
             preference2.options.length = 0;
-            for(index in prefListHRC) {
-                preference2.options[preference2.options.length] = new Option(prefListHRC[index], index);
+            for(index in prefListECOSOC) {
+                preference2.options[preference2.options.length] = new Option(prefListECOSOC[index], index);
             }
             var preference3 = document.getElementById('pref3_2');
             preference3.options.length = 0;
-            for(index in prefListHRC) {
-                preference3.options[preference3.options.length] = new Option(prefListHRC[index], index);
+            for(index in prefListECOSOC) {
+                preference3.options[preference3.options.length] = new Option(prefListECOSOC[index], index);
             }
             
         }
@@ -257,13 +257,7 @@ $(document).ready(function(){
                     else {
                         AccMeals = "No";
                     }
-                    var TShirt = document.getElementById("TShirt");
-                    if(TShirt.checked == true) {
-                        TShirt = "Yes";
-                    }
-                    else {
-                        TShirt = "No";
-                    }
+                    
                     var experience = encodeURIComponent($('#experience').val());
                     var baseURL = 'https://docs.google.com/forms/d/1g07sGjfZql-Q9aD1S7-5XHZkVw002kuDgaDLW8BHBz0/formResponse?';
                     var submitRef = '&submit=Submit';
