@@ -1,11 +1,9 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
-
-/*
-	Landed by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+@font-face {
+    font-family: AmericanCaptain;
+    src: url(assets/fonts/AmericanCaptain.otf);
+}
 
 /* Reset */
 
@@ -2501,18 +2499,21 @@
 
 #clockdiv{
 	font-family: sans-serif;
-	color: #fff;
+	color: white;
 	display: inline-block;
 	font-weight: 100;
 	text-align: center;
-	font-size: 30px;
+	font-size: 40px;
+    
 }
 
 #clockdiv > div{
 	padding: 10px;
 	border-radius: 3px;
-	background: transparent;
+	background: black;
 	display: inline-block;
+    opacity: 0.7;
+   
 }
 
 #clockdiv div > span{
@@ -2524,9 +2525,15 @@
 
 .smalltext{
 	padding-top: 5px;
-	font-size: 16px;
+	font-size: 35px;
+    font-family: AmericanCaptain;
+    
 }
 
+.SSDate {
+    font-family: AmericanCaptain;
+    font-size: 40px;
+}
 
 /* Image */
 
