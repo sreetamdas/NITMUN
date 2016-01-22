@@ -281,10 +281,9 @@ $(document).ready(function(){
                     var pref3_2ID = "&entry.214455865=";
                     var prevAttID = "&entry.862281140=";
                     var AccMealsID = "&entry.1481386038=";
-                    var TShirtID = "&entry.36233087=";
                     var experienceID = "&entry.1458061965=";
                     
-                    var submitURL = (baseURL + nameID + name + emailID + email + contactNumberID + contactNumber + collegeID + college + courseID + course + yearID + year + cityID + city + emNameID + emName + emRelationID + emRelation + emContactID + emContact + councilID + council + pref1ID + pref1 + pref2ID + pref2 + pref3ID + pref3 + council_2ID + council_2 + pref1_2ID + pref1_2 + pref2_2ID + pref2_2 + pref3_2ID + pref3_2 + prevAttID + prevAtt+ AccMealsID + AccMeals+ TShirtID + TShirt + experienceID + experience + submitRef);
+                    var submitURL = (baseURL + nameID + name + emailID + email + contactNumberID + contactNumber + collegeID + college + courseID + course + yearID + year + cityID + city + emNameID + emName + emRelationID + emRelation + emContactID + emContact + councilID + council + pref1ID + pref1 + pref2ID + pref2 + pref3ID + pref3 + council_2ID + council_2 + pref1_2ID + pref1_2 + pref2_2ID + pref2_2 + pref3_2ID + pref3_2 + prevAttID + prevAtt+ AccMealsID + AccMeals + experienceID + experience + submitRef);
                     
                     if((name!="")&&(email!="")&&(contactNumber!="")&&(college!="")&&(college!="")&&(course!="")&&(city!="")&&(emContact!="")) {
                 
@@ -305,7 +304,7 @@ $(document).ready(function(){
                     }
                 }
     $("#delegateReg").click(submit);
-});
+}); 
     
     
    
