@@ -2,12 +2,13 @@
 @import url("http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 @font-face {
     font-family: AmericanCaptain;
-    src: url(assets/fonts/AmericanCaptain.otf);
+    src: url(AmericanCaptain.otf);
 }
 @font-face {
-    font-family: AmericanCaptain2;
-    src: url(assets/fonts/AmericanCaptain.ttf);
+    font-family: HarryPotter;
+    src: url(HarryPotter.ttf);
 }
+
 
 /* Reset */
 
@@ -2537,6 +2538,11 @@
 .SSDate {
     font-family: AmericanCaptain;
     font-size: 40px;
+}
+
+#HarryPotter {
+    font-family: HarryPotter;
+    color: gold;
 }
 
 /* Image */
