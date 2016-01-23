@@ -7,7 +7,6 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
         <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
@@ -44,180 +43,45 @@
             <div class="container">
                
 							<section>
-								<h1 style="font-size: 2.5cm; padding-top: 2cm;">Individual Delegate Registration</h1>
-                                <iframe name="votar" style="display:none;"></iframe>   <!-- no-page-reload -->
-								<form name="delegateReg" id="delegateReg" method="POST" action="" target="votar">
-									<div class="row uniform 50%">
-                                        <div class="2u 0u$(xsmall)"></div><div class="1u 0u$(xsmall)"><h4 style="padding-top: 13px;">Name : </h4></div>
-										<div class="6u$ 12u$(xsmall)">
-                                            
-											<input type="text" name="Name" id="Name" value="" placeholder="Name" required/>
-										</div>
-                                        <div class="2u 0u$(xsmall)"></div><div class="1u 0u$(xsmall)"><h4 style="padding-top: 13px;">Email : </h4></div>
-										<div class="6u$ 12u$(xsmall)">
-											<input type="email" name="email" id="email" value="" placeholder="Email" required/>
-										</div>
-                                        <div class="1u 0u$(xsmall)"></div><div class="2u 0u$(xsmall)"><h4 style="padding-top: 13px;">&nbsp;&nbsp;&nbsp;Contact Number : </h4></div>
-                                        <div class="6u$ 12u$(xsmall)">
-											<input type="text" name="contactNumber" id="contactNumber" value="" placeholder="Contact Number" required/>
-										</div>
-                                        <div class="1u 0u$(xsmall)"></div><div class="2u 0u$(xsmall)"><h4 style="padding-top: 13px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;College : </h4></div>
-                                        <div class="6u$ 12u$(xsmall)">
-											<input type="text" name="College" id="College" value="" placeholder="College" required/>
-										</div>
-										<div class="4u 12u$(xsmall)" style="margin-left: 2cm;">
-											<input type="text" name="course" id="course" value="" placeholder="Course" required/>
-										</div>
-                                        <div class="3u 12u$(xsmall)">
-											<input type="text" name="year" id="year" value="" placeholder="Year of study" />
-										</div>
-                                        <div class="4u$ 12u$(xsmall)">
-											<input type="text" name="city" id="city" value="" placeholder="City" required/>
-										</div>
-                                        
-                                        
-										
-                                        <h4 style="padding-top: 33px;">Emergency Contact : </h4>
-										<div class="4u 12u$(xsmall)">
-											<input type="text" name="emName" id="emName" value="" placeholder="Name" />
-										</div>
-                                        <div class="3u 12u$(xsmall)">
-											<input type="text" name="emRelation" id="emRelation" value="" placeholder="Relation" />
-										</div>
-                                        <div class="3u$ 12u$(xsmall)">
-											<input type="text" name="emContact" id="emContact" value="" placeholder="Contact Number" required/>
-										</div>
-										
-                                    
-                                        <h4 style="margin-top: 7px; padding-right: 3cm;">Select 1st Preference for Council/ Committee : </h4>
-                                        <div class="4u$ 12u$(xsmall)">
-											<div class="select-wrapper">
-												<select name="council" id="council">
-													<option value="">-Select-</option>
-													<option value="SC">Security Council</option>
-													<option value="ECOSOC">ECOSOC</option>
-                                                    <option value="HP">Harry Potter Fictional Crisis Committee</option>
-												</select>
-											</div>
-										</div>
-                              
-                <!-- -------------------------------------------------   -->
-                                        
-                                        <h4 style="margin-top: 7px; padding-right: 2cm">Select Preference : </h4>
-                                        
-										<div class="3u 12u$(xsmall) SC_dialog">
-											<div class="select-wrapper">
-												<select name="pref1" id="pref1">
-													<option value="">-Select 1st preference-</option>
-													<option value="">-Select-</option>
-												</select>
-											</div>
-										</div>
-                                        <div class="3u 12u$(xsmall) SC_dialog">
-											<div class="select-wrapper">
-												<select name="pref2" id="pref2">
-													<option value="">-Select 2nd preference-</option>
-													<option value="">-Select-</option>
-												</select>
-											</div>
-										</div>
-                                        <div class="3u$ 12u$(xsmall) SC_dialog">
-											<div class="select-wrapper">
-												<select name="pref3" id="pref3">
-													<option value="">-Select 3rd preference-</option>
-													<option value="">-Select-</option>
-												</select>
-											</div>
-                                        </div>
-                                        <h4 style="margin-top: 7px; padding-right: 3cm;">Select 2nd Preference for Council/ Committee : </h4>
-                                        <div class="4u$ 12u$(xsmall)">
-											<div class="select-wrapper">
-												<select name="council_2" id="council_2">
-													<option value="">-Select-</option>
-													<option value="SC">Security Council</option>
-													<option value="ECOSOC">ECOSOC</option>
-                                                    <option value="HP">Harry Potter Fictional Crisis Committee</option>
-												</select>
-											</div>
-										</div>
-                              <!--          <div class="2u$ 12u$(xsmall)">
-											<input type="submit" value="Select Committee" class="special" id="formSubmitBtn"/>
-												
-										</div>
-                <!-- -------------------------------------------------   -->
-                                        
-                                        <h4 style="margin-top: 7px; padding-right: 2cm">Select Preference : </h4>
-                                        
-										<div class="3u 12u$(xsmall) SC_dialog">
-											<div class="select-wrapper">
-												<select name="pref1_2" id="pref1_2">
-													<option value="">-Select 1st preference-</option>
-													<option value="">-Select-</option>>
-												</select>
-											</div>
-										</div>
-                                        <div class="3u 12u$(xsmall) SC_dialog">
-											<div class="select-wrapper">
-												<select name="pref2_2" id="pref2_2">
-													<option value="">-Select 2nd preference-</option>
-													<option value="">-Select-</option>
-												</select>
-											</div>
-										</div>
-                                        <div class="3u$ 12u$(xsmall) SC_dialog">
-											<div class="select-wrapper">
-												<select name="pref3_2" id="pref3_2">
-													<option value="">-Select 3rd preference-</option>
-													<option value="">-Select-</option>
-												</select>
-											</div>
-                                        </div>
-										<div class="3u 12u$(medium)">
-											<input type="checkbox" id="prevAtt" name="prevAtt">
-											<label for="prevAtt">Previously Attended NITMUN</label>
-										</div>
-                                        <div class="2u 12u$(medium)">
-										</div>
-                                        <div class="5u$ 12u$(medium)">
-											<input type="checkbox" id="AccMeals" name="AccMeals">
-											<label for="AccMeals">On Campus Accommodation and Meals (₹400*)<p>Terms and Conditions Apply</p></label>
-										</div>
-                        
-                                        <h4 style="margin-top: 30px;">Previousy attended MUNs and awards received : </h4>
-										<div class="7u$ 12u$(medium)">
-											<textarea name="experience" id="experience" placeholder="Previous experience in MUNs" rows="6" maxlength="500"></textarea>
-										</div>
-                                        <div class="4u 0u$(xsmall)"></div>
-                                        <div class="4u$ 12u$(xsmall) no-border">
-                                            <input type="checkbox" id="TCs" name="TCs" required>
-											<label for="TCs">I hereby agree to the <a href="Terms&Conditions.html">Terms & Conditions</a>.</label>
-                                        </div>
-										<div class="12u$" align="center">
-											<ul class="actions">
-												<li><input type="submit" value="Submit" class="special" id="formSubmitBtn"/></li>
-												<li><input type="reset" value="Reset" /></li>
-											</ul>
-										</div>
-                                        <div class="8u 12u$(xsmall)" style="padding: 30px;">
-                                            <dialog id="queryModal" align="center">
-                                                <h2>Registered Successfully<br>We'll get right back to you.</h2> 
-                                            </dialog>
-                                        </div>
-									</div>
-								</form>
+                                
+								<h1 style="font-size: 3cm; padding-top: 0cm; padding-bottom: 0cm;" align="center">Registration<br>Opening Soon!</h1>
+                                <div class="box alt no-border">
+							<div class="row uniform" align="center">
+								<section class="3u 6u(medium) 12u$(xsmall)">
+                                    <a href="mailto:nitmun16@gmail.com">
+                                        <span class="icon fa-envelope major"></span></a>
+                                        <a href="mailto:nitmun16@gmail.com"><h3>Contact Us</h3></a>
+									<p>Send us a mail</p>
+								</section>
+								<section class="3u 6u$(medium) 12u$(xsmall)">
+                                    <a href="http://bit.do/nitmun_fb">
+                                    <span class="icon major fa-facebook"></span>
+									   <h3>Facebook</h3></a>
+									<p>Like our page for the latest updates</p>
+								</section>
+								<section class="3u 6u(medium) 12u$(xsmall)">
+                                    <a href="http://bit.do/nitmun_twitter">
+									<span class="icon major fa-twitter"></span>
+                                        <h3>Twitter</h3></a>
+									<p>Follow us for the latest on NITMUN</p>
+								</section>
+                                <section class="3u$ 6u(medium) 12u$(xsmall)">
+                                    <a href="http://bit.do/nitmun_youtube">
+									<span class="icon major fa-youtube"></span>
+                                        <h3>YouTube</h3></a>
+									<p>Subscribe to our channel</p>
+								</section>								
+							</div>
+						</div>
+						
+                                
 							</section>
             </div>
 			<!-- Footer -->
 				<footer id="footer">
-					<ul class="icons">
-                        <li><a href="mailto:nitmun16@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						<li><a href="http://bit.do/nitmun_fb" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                        <li><a href="http://bit.do/nitmun_twitter" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                        <li><a href="http://bit.do/nitmun_youtube" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
-                        <li><a href="http://bit.do/nitmun_instagram" class="icon fa-instagram"><span class="label">Instagram</span></a></li>						
-					</ul>
+					
 					<ul class="copyright">
-                        <li>&copy; NITMUN'16. All rights reserved.</li><li>Made by <a href="http://bit.do/sreetamdas">Sreetam Das</a> with <a href="http://bit.do/html5up">HTML5 UP</a></li>
+						<li>&copy; NITMUN'16. All rights reserved.</li><li>Made by <a href="www.facebook.com/sreetam.das">Sreetam Das</a> with <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</footer>
 
@@ -233,7 +97,7 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-        <script src="assets/js/formIndividualSubmit.js"></script>
+        <script src="assets/js/formSOP.js"></script>
            
 			
 
