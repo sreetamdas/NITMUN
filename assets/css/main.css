@@ -4,6 +4,10 @@
     font-family: AmericanCaptain;
     src: url(assets/fonts/AmericanCaptain.otf);
 }
+@font-face {
+    font-family: AmericanCaptain2;
+    src: url(assets/fonts/AmericanCaptain.ttf);
+}
 
 /* Reset */
 
