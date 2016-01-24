@@ -7,37 +7,34 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
         <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
 		<div id="page-wrapper">
+            
 
 				<header id="header" style="position: fixed; background: #1c1d26;">
-                    <a href="#banner" style="border-bottom: none; display: inline-block;"><img src="images/download.svg" height="61"/></a>
-					<h1 id="logo" style="margin-left: 3cm;"><a href="index.html">NITMUN</a></h1>
+                    <a href="index.html" style="border-bottom: none; display: inline-block; margin-left: 0.5cm"><img src="images/NITMUN-logo.png" height="61"/></a>
+                    <a href="index.html"><h1 style="margin-left: 3cm;" class="logo">NIT Warangal Model United Nations</h1></a>
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li>
-								<a href="#">Info</a>
-								<ul>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-									<li>
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Option 1</a></li>
-											<li><a href="#">Option 2</a></li>
-											<li><a href="#">Option 3</a></li>
-											<li><a href="#">Option 4</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li><!-- Recheck elements in the navbar     -->
-							<li><a href="elements.html">Elements</a></li>
-							<li><a href="register.html" class="button special">Register</a></li>
+							
+							
+							<li><a href="#" class="button special">Register</a>
+                            <ul>
+                                <li><a href="registerDais.html">Dais Member</a></li>
+                                <li><a href="registerIP.html">International Press</a></li>
+                                <li>
+                                <a href="#">Delegate</a>
+                                    <ul>
+                                        <li><a href="registerIndividual.html">As an Individual</a></li>
+                                        <li><a href="registerDelegation.html">Delegation Registration</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            </li>
 						</ul>
 					</nav>
 				</header>
@@ -45,56 +42,165 @@
 
 						<!-- Form -->
             <div class="container">
+               
 							<section>
-								<h1>Delegation Registration</h1>
-								<form method="post" action="#">
+								<h1 style="font-size: 2.5cm; padding-top: 2cm;">Delegation <br>Registration</h1>
+                                <iframe name="votar" style="display:none;"></iframe>   <!-- no-page-reload -->
+								<form name="delegateReg" id="delegateReg" method="POST" action="" target="votar">
 									<div class="row uniform 50%">
-										<div class="6u 12u$(xsmall)">
-											<input type="text" name="name" id="name" value="" placeholder="Name" />
-										</div>
+                                        <div class="6u$ 12u$(xsmall)"><h1 style="font-size: 40px">Head Delegate Details</h1></div>
+                                        <div class="2u 0u$(xsmall)"></div><div class="1u 0u$(xsmall)"><h4 style="padding-top: 13px;">Name : </h4></div>
 										<div class="6u$ 12u$(xsmall)">
-											<input type="email" name="email" id="email" value="" placeholder="Email" />
+                                            
+											<input type="text" name="Name" id="Name" value="" placeholder="Name" required/>
 										</div>
-										<div class="12u$">
+                                        <div class="2u 0u$(xsmall)"></div><div class="1u 0u$(xsmall)"><h4 style="padding-top: 13px;">Email : </h4></div>
+										<div class="6u$ 12u$(xsmall)">
+											<input type="email" name="email" id="email" value="" placeholder="Email" required/>
+										</div>
+                                        <div class="1u 0u$(xsmall)"></div><div class="2u 0u$(xsmall)"><h4 style="padding-top: 13px;">&nbsp;&nbsp;&nbsp;Contact Number : </h4></div>
+                                        <div class="6u$ 12u$(xsmall)">
+											<input type="text" name="contactNumber" id="contactNumber" value="" placeholder="Contact Number" required/>
+										</div>
+                                        <div class="1u 0u$(xsmall)"></div><div class="2u 0u$(xsmall)"><h4 style="padding-top: 13px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;College : </h4></div>
+                                        <div class="6u$ 12u$(xsmall)">
+											<input type="text" name="College" id="College" value="" placeholder="College" required/>
+										</div>
+										<div class="4u 12u$(xsmall)" style="margin-left: 2cm;">
+											<input type="text" name="course" id="course" value="" placeholder="Course" required/>
+										</div>
+                                        <div class="3u 12u$(xsmall)">
+											<input type="text" name="year" id="year" value="" placeholder="Year of study" />
+										</div>
+                                        <div class="4u$ 12u$(xsmall)">
+											<input type="text" name="city" id="city" value="" placeholder="City" required/>
+										</div>
+                                        
+                                        
+										
+                                        <h4 style="padding-top: 33px;">Faculty Advisor/ 2nd Incharge Delegate : </h4>
+										<div class="3u 12u$(xsmall) SC_dialog">
+											<input type="text" name="emName" id="emName" value="" placeholder="Name" />
+										</div>
+         <!--    -->                    <div class="3u 12u$(xsmall) SC_dialog">
+											<input type="text" name="emRelation" id="emRelation" value="" placeholder="Email" />
+										</div>
+                                        <div class="2u$ 12u$(xsmall SC_dialog)">
+											<input type="text" name="emContact" id="emContact" value="" placeholder="Contact Number" required/>
+										</div>            
+                                            <div class="3u 12u$(xsmall)"><h4 style="padding-top: 10px;">Total Number of Delegates : </h4></div>
+                                            <div class="1u$ 12u$(xsmall)">
+	<!---->										<input type="text" name="emRelation" id="emRelation" value="" placeholder="" /></div>			
+                                        <h4 class="12u$ 12u$(xsmall) SC_dialog" style="padding-top: 33px; font-weight: 900; font-size: 22px"><em>All Delegations must have at least one Delegate in Security Council and ECOSOC</em></h4>
+                                        
+                                        
+                                        <div class="7u 12u$(xsmall)"><h4 style="font-size: 50px">Security Council<span style="padding-left: 100px; font-size: 18px">Total Number of Delegates :</span></h4></div>
+                                        <div class="1u$ 12u$(xsmall)" style="padding-top: 40px;">
+                                        <input type="text" name="emRelation" id="emRelation" value="" placeholder="" />
+                                        </div>
+                              
+                <!-- -------------------------------------------------   -->
+                                        
+                                        <h4 style="margin-top: 7px; padding-right: 2cm">Select Preference : </h4>
+                                        
+										<div class="3u 12u$(xsmall) SC_dialog">
 											<div class="select-wrapper">
-												<select name="category" id="category">
-													<option value="">-Select Committee -</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
+												<select name="pref1" id="pref1">
+													<option value="">-Select 1st preference-</option>
+													<option value="">-Select-</option>
 												</select>
 											</div>
 										</div>
-										<div class="4u 12u$(medium)">
-											<input type="radio" id="priority-low" name="priority" checked>
-											<label for="priority-low">Low Priority</label>
+                                        <div class="3u 12u$(xsmall) SC_dialog">
+											<div class="select-wrapper">
+												<select name="pref2" id="pref2">
+													<option value="">-Select 2nd preference-</option>
+													<option value="">-Select-</option>
+												</select>
+											</div>
 										</div>
-										<div class="4u 12u$(medium)">
-											<input type="radio" id="priority-normal" name="priority">
-											<label for="priority-normal">Normal Priority</label>
+                                        <div class="3u$ 12u$(xsmall) SC_dialog">
+											<div class="select-wrapper">
+												<select name="pref3" id="pref3">
+													<option value="">-Select 3rd preference-</option>
+													<option value="">-Select-</option>
+												</select>
+											</div>
+                                        </div>
+                                        <h4 style="margin-top: 7px; padding-right: 3cm;">Select 2nd Preference for Council/ Committee : </h4>
+                                        <div class="4u$ 12u$(xsmall)">
+											<div class="select-wrapper">
+												<select name="council_2" id="council_2">
+													<option value="">-Select-</option>
+													<option value="SC">Security Council</option>
+													<option value="ECOSOC">ECOSOC</option>
+                                                    <option value="HP">Harry Potter Fictional Crisis Committee</option>
+												</select>
+											</div>
 										</div>
-										<div class="4u$ 12u$(medium)">
-											<input type="radio" id="priority-high" name="priority">
-											<label for="priority-high">High Priority</label>
+                              <!--          <div class="2u$ 12u$(xsmall)">
+											<input type="submit" value="Select Committee" class="special" id="formSubmitBtn"/>
+												
 										</div>
-										<div class="6u 12u$(medium)">
-											<input type="checkbox" id="copy" name="copy">
-											<label for="copy">Email me a copy of this message</label>
+                <!-- -------------------------------------------------   -->
+                                        
+                                        <h4 style="margin-top: 7px; padding-right: 2cm">Select Preference : </h4>
+                                        
+										<div class="3u 12u$(xsmall) SC_dialog">
+											<div class="select-wrapper">
+												<select name="pref1_2" id="pref1_2">
+													<option value="">-Select 1st preference-</option>
+													<option value="">-Select-</option>>
+												</select>
+											</div>
 										</div>
-										<div class="6u$ 12u$(medium)">
-											<input type="checkbox" id="human" name="human" checked>
-											<label for="human">I am a human and not a robot</label>
+                                        <div class="3u 12u$(xsmall) SC_dialog">
+											<div class="select-wrapper">
+												<select name="pref2_2" id="pref2_2">
+													<option value="">-Select 2nd preference-</option>
+													<option value="">-Select-</option>
+												</select>
+											</div>
 										</div>
-										<div class="12u$">
-											<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+                                        <div class="3u$ 12u$(xsmall) SC_dialog">
+											<div class="select-wrapper">
+												<select name="pref3_2" id="pref3_2">
+													<option value="">-Select 3rd preference-</option>
+													<option value="">-Select-</option>
+												</select>
+											</div>
+                                        </div>
+										<div class="3u 12u$(medium)">
+											<input type="checkbox" id="prevAtt" name="prevAtt">
+											<label for="prevAtt">Previously Attended NITMUN</label>
 										</div>
-										<div class="12u$">
+                                        <div class="2u 12u$(medium)">
+										</div>
+                                        <div class="5u$ 12u$(medium)">
+											<input type="checkbox" id="AccMeals" name="AccMeals">
+											<label for="AccMeals">On Campus Accommodation and Meals (₹400*)<p>Terms and Conditions Apply</p></label>
+										</div>
+                        
+                                        <h4 style="margin-top: 30px;">Previousy attended MUNs and awards received : </h4>
+										<div class="7u$ 12u$(medium)">
+											<textarea name="experience" id="experience" placeholder="Previous experience in MUNs" rows="6" maxlength="500"></textarea>
+										</div>
+                                        <div class="4u 0u$(xsmall)"></div>
+                                        <div class="4u$ 12u$(xsmall) no-border">
+                                            <input type="checkbox" id="TCs" name="TCs" required>
+											<label for="TCs">I hereby agree to the <a href="Terms&Conditions.html">Terms & Conditions</a>.</label>
+                                        </div>
+										<div class="12u$" align="center">
 											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="special" /></li>
+												<li><input type="submit" value="Submit" class="special" id="formSubmitBtn"/></li>
 												<li><input type="reset" value="Reset" /></li>
 											</ul>
 										</div>
+                                        <div class="8u 12u$(xsmall)" style="padding: 30px;">
+                                            <dialog id="queryModal" align="center">
+                                                <h2>Registered Successfully<br>We'll get right back to you.</h2> 
+                                            </dialog>
+                                        </div>
 									</div>
 								</form>
 							</section>
@@ -102,22 +208,22 @@
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+                        <li><a href="mailto:nitmun16@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="http://bit.do/nitmun_fb" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="http://bit.do/nitmun_twitter" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="http://bit.do/nitmun_youtube" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
+                        <li><a href="http://bit.do/nitmun_instagram" class="icon fa-instagram"><span class="label">Instagram</span></a></li>						
 					</ul>
 					<ul class="copyright">
-						<li>&copy; NITMUN'16. All rights reserved.</li><li>Made by <a href="www.facebook.com/sreetam.das">Sreetam Das</a> with <a href="http://html5up.net">HTML5 UP</a></li>
+                        <li>&copy; NITMUN'16. All rights reserved.</li><li>Made by <a href="http://bit.do/sreetamdas">Sreetam Das</a> with <a href="http://bit.do/html5up">HTML5 UP</a></li>
 					</ul>
 				</footer>
 
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+            
+            <script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -125,6 +231,9 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+        <script src="assets/js/formDelegationSubmit.js"></script>
+           
+			
 
 	</body>
 </html>
