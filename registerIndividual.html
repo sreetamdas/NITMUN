@@ -84,7 +84,7 @@
                                         <div class="3u 12u$(xsmall)">
 											<input type="text" name="emRelation" id="emRelation" value="" placeholder="Relation" />
 										</div>
-                                        <div class="3u$ 12u$(xsmall)">
+                                        <div class="3u$ 12u$(xsmall) SC_dialog">
 											<input type="text" name="emContact" id="emContact" value="" placeholder="Contact Number" required/>
 										</div>
 										
@@ -180,13 +180,15 @@
 										</div>
                                         <div class="5u$ 12u$(medium)">
 											<input type="checkbox" id="AccMeals" name="AccMeals">
-											<label for="AccMeals">On Campus Accommodation and Meals (₹400*)<p>Terms and Conditions Apply</p></label>
+											<label for="AccMeals">On Campus Accommodation and Meals (₹400*)<p style="font-size: 13px" class="no-border"><a href="Terms&Conditions.html">Terms and Conditions</a></p></label>
 										</div>
                         
                                         <h4 style="margin-top: 30px;">Previousy attended MUNs and awards received : </h4>
 										<div class="7u$ 12u$(medium)">
-											<textarea name="experience" id="experience" placeholder="Previous experience in MUNs" rows="6" maxlength="500"></textarea>
+											<textarea name="experience" id="experience" placeholder="Previous experience in MUNs" rows="6" maxlength="1200"></textarea>
 										</div>
+                                        <div align="center" class="12u$">
+                                        <div  id="divexperience" style="height: 1cm; color: white;"></div></div>
                                         <div class="4u 0u$(xsmall)"></div>
                                         <div class="4u$ 12u$(xsmall) no-border">
                                             <input type="checkbox" id="TCs" name="TCs" required>
@@ -224,7 +226,18 @@
 		</div>
 
 		<!-- Scripts -->
-            
+            <script>
+                CharacterCount = function(TextArea,FieldToCount){
+                var myField = document.getElementById(TextArea);
+                var myLabel = document.getElementById(FieldToCount); 
+                if(!myField || !myLabel){return false}; // catches errors
+                var MaxChars =  myField.maxLengh;
+                if(!MaxChars){MaxChars =  myField.getAttribute('maxlength') ; }; 	if(!MaxChars){return false};
+                var remainingChars =   MaxChars - myField.value.length
+                myLabel.innerHTML = remainingChars+" Characters Remaining"
+            }
+            setInterval(function(){CharacterCount('experience','divexperience')},55);    
+            </script>
             <script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
