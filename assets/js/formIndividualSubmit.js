@@ -38,7 +38,7 @@ $(document).ready(function(){
         Syria                      :    'Syria',                       
         Taiwan                     :    'Republic of China (Taiwan)',                       
         United_Arab_Emirates       :    'United Arab Emirates',                       
-        United_Kingdoms            :    'United Kingdoms',                       
+        United_Kingdom             :    'United Kingdom',                       
         USA                        :    'United States of America',                       
         Vietnam                    :    'Vietnam'                                              
     };
@@ -122,7 +122,7 @@ $(document).ready(function(){
         Albus_Dumbeldore        : 'Albus Dumbeldore',
         Amelia_Bones            : 'Amelia Bones',
         Amycus_Carrow           : 'Amycus Carrow',
-        Antonin_Doloh           : 'Antonin Doloh',
+        Antonin_Dolohov         : 'Antonin Dolohov',
         Arthur_Weasley          : 'Arthur Weasley',
         Bartemius_Crouch_Sr     : 'Bartemius Crouch Sr.',
         Bellatrix_Lestrange     : 'Bellatrix Lestrange',
@@ -132,8 +132,8 @@ $(document).ready(function(){
         Igor_Karkaroff          : 'Igor Karkaroff',
         Kingsley_Shacklebolt    : 'Kingsley Shacklebolt',
         Lucius_Malfoy           : 'Lucius Malfoy',
-        Minerva_McGonagal       : 'Minerva McGonagal',
-        Perciville_Weasley      : 'Perciville Weasley',
+        Minerva_McGonagal       : 'Minerva McGonagall',
+        Perciville_Weasley      : 'Percival Weasley',
         Remus_Lupin             : 'Remus Lupin',
         Rubeus_Hagrid           : 'Rubeus Hagrid',
         Rufus_Scrimgeour        : 'Rufus Scrimgeour',
@@ -339,6 +339,17 @@ $(document).ready(function(){
             }    
         }
     });
+    $("#council").on({
+    change: function() {
+            var council1 = ($(this).val());
+            var selectobject=document.getElementById("council_2")
+            for (var i=0; i<selectobject.length; i++){
+                selectobject.options[i].disabled = false;
+                if ((selectobject.options[i].value == council1))
+                selectobject.options[i].disabled = true;
+            }
+        }
+    });
 
     
     function submit() {
@@ -403,7 +414,7 @@ $(document).ready(function(){
                     
                     var submitURL = (baseURL + nameID + name + emailID + email + contactNumberID + contactNumber + collegeID + college + courseID + course + yearID + year + cityID + city + emNameID + emName + emRelationID + emRelation + emContactID + emContact + councilID + council + pref1ID + pref1 + pref2ID + pref2 + pref3ID + pref3 + council_2ID + council_2 + pref1_2ID + pref1_2 + pref2_2ID + pref2_2 + pref3_2ID + pref3_2 + prevAttID + prevAtt+ AccMealsID + AccMeals + experienceID + experience + submitRef);
                     
-                    if((name!="")&&(email!="")&&(contactNumber!="")&&(college!="")&&(college!="")&&(course!="")&&(city!="")&&(emContact!="")) {
+                    if((name!="")&&(email!="")&&(contactNumber!="")&&(college!="")&&(college!="")&&(course!="")&&(city!="")&&(emContact!="")&&(experience!="")) {
                 
                         console.log(submitURL);
                         $(this)[0].action=submitURL;
@@ -413,10 +424,10 @@ $(document).ready(function(){
                         var dialog = document.getElementById('queryModal');
                         
                             dialog.show();
-                        
-                        document.getElementById('queryModal').onclick = function() {
+                            document.getElementById("formSubmitBtn").disabled = true;
+                        /*document.getElementById('queryModal').onclick = function() {
                             dialog.close();
-                        };
+                        };*/
                         });
 
                     }
