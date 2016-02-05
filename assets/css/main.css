@@ -2540,6 +2540,10 @@
     font-size: 40px;
 }
 
+.Title{
+    padding-top: 4cm;
+    font-size: 90px;
+}
 #HarryPotter {
     font-family: HarryPotter;
     color: gold;
