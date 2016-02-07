@@ -425,6 +425,7 @@ $(document).ready(function(){
                         
                             dialog.show();
                             document.getElementById("formSubmitBtn").disabled = true;
+                            document.getElementById('formSubmitBtn').value = 'Submitted';
                         /*document.getElementById('queryModal').onclick = function() {
                             dialog.close();
                         };*/
