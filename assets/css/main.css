@@ -1590,6 +1590,17 @@
     border-bottom-color: transparent; !important
 }
 
+/*#msg {
+    height: 350px; 
+    width:100%; 
+    overflow: auto; 
+    margin-left: 1em;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+        border-color: #33ffff; 
+}*/
+
 .SC_dialog {
     margin-bottom: 1cm;
 }
