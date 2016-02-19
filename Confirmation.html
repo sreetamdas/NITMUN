@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Registration for NITMUN'16</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+
+<body>
+    <div id="page-wrapper">
+
+
+        <header id="header" style="position: fixed; background: #1c1d26;">
+            <a href="index.html" style="border-bottom: none; display: inline-block; margin-left: 0.5cm"><img src="images/NITMUN-logo.png" height="61" /></a>
+            <a href="index.html"><h1 style="margin-left: 3cm;" class="logo">NIT Warangal Model United Nations</h1></a>
+            <nav id="nav">
+                <ul>
+
+
+                    <li><a href="#" class="button special">Register</a>
+                        <ul>
+                            <li><a href="registerDais.html">Dais Member</a></li>
+                            <li><a href="registerIP.html">International Press</a></li>
+                            <li>
+                                <a href="#">Delegate</a>
+                                <ul>
+                                    <li><a href="registerIndividual.html">As an Individual</a></li>
+                                    <li><a href="registerDelegation.html">Delegation Registration</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- Form -->
+        <div class="container">
+
+            <section>
+                <h1 style="font-size: 2.5cm; padding-top: 2cm;">Allotment Confirmation</h1>
+                <iframe name="votar" style="display:none;"></iframe>
+                <!-- no-page-reload -->
+                <form name="delegateReg" id="delegateReg" method="POST" action="" target="votar">
+                    <div class="row uniform 50%">
+                        <div class="2u 0u$(xsmall)"></div>
+                        <div class="1u 0u$(xsmall)">
+                            <h4 style="padding-top: 13px;">Name : </h4></div>
+                        <div class="6u$ 12u$(xsmall)">
+
+                            <input type="text" name="Name" id="Name" value="" placeholder="Name" required/>
+                        </div>
+                        <div class="2u 0u$(xsmall)"></div>
+                        <div class="1u 0u$(xsmall)">
+                            <h4 style="padding-top: 13px;">Email : </h4></div>
+                        <div class="6u$ 12u$(xsmall)">
+                            <input type="email" name="email" id="email" value="" placeholder="Email" required/>
+                        </div>
+                        <div class="1u 0u$(xsmall)"></div>
+                        <div class="2u 0u$(xsmall)">
+                            <h4 style="padding-top: 13px;">&nbsp;&nbsp;&nbsp;Contact Number : </h4></div>
+                        <div class="6u$ 12u$(xsmall)">
+                            <input type="text" name="contactNumber" id="contactNumber" value="" placeholder="Contact Number" required/>
+                        </div>
+                        <div class="1u 0u$(xsmall)"></div>
+                        <div class="2u 0u$(xsmall)">
+                            <h4 style="padding-top: 13px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;College : </h4></div>
+                        <div class="6u$ 12u$(xsmall)">
+                            <input type="text" name="College" id="College" value="" placeholder="College" required/>
+                        </div>
+                        <div class="4u 12u$(xsmall)" style="margin-left: 2cm;">
+                            <input type="text" name="course" id="course" value="" placeholder="Course" required/>
+                        </div>
+                        <div class="3u 12u$(xsmall)">
+                            <input type="text" name="year" id="year" value="" placeholder="Year of study" />
+                        </div>
+                        <div class="4u$ 12u$(xsmall)">
+                            <input type="text" name="city" id="city" value="" placeholder="City" required/>
+                        </div>
+
+
+
+
+                        <div class="4u 0u$(xsmall)"></div>
+                        <div class="4u$ 12u$(xsmall) no-border">
+                            <input type="checkbox" id="TCs" name="TCs" required>
+                            <label for="TCs">I hereby agree to the <a href="Terms&Conditions.html">Terms & Conditions</a>.</label>
+                        </div>
+                        <div class="12u$" align="center">
+                            <ul class="actions">
+                                <li>
+                                    <input type="submit" value="Submit" class="special" id="formSubmitBtn" onclick="document.getElementById('formSubmitBtn').value = 'Submitting';" />
+                                </li>
+                                <li>
+                                    <input type="reset" value="Reset" />
+                                </li>
+                            </ul>
+                            <dialog id="queryModal" align="center">
+                                <h2>Registered Successfully<br>We'll get right back to you.</h2>
+                            </dialog>
+                        </div>
+                        <div class="8u 12u$(xsmall)" style="padding: 0px;">
+
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <!-- Footer -->
+        <footer id="footer">
+            a
+            <ul class="copyright">
+                <li>&copy; NITMUN'16. All rights reserved.</li>
+                <li>Made by <a href="http://bit.do/sreetamdas">Sreetam Das</a> with <a href="http://bit.do/html5up">HTML5 UP</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/formIndividualSubmit.js"></script>
+
+
+
+</body>
+
+</html>
