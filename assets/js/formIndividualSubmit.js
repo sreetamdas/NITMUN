@@ -30,15 +30,17 @@ $(document).ready(function () {
         Japan: 'Japan',
         Jordan: 'Jordan',
         Kenya: 'Kenya',
+        Kosovo: 'Kosovo',
         Kyrgyzstan: 'Kyrgyzstan',
         Nigeria: 'Nigeria',
         Portugal: 'Portugal',
         Republic_of_Korea: 'Republic of Korea',
         Russia: 'Russia',
-        Serbia_and_Kosovo: 'Serbia and Kosovo',
+        Serbia: 'Serbia',
         Somalia: 'Somalia',
         South_Africa: 'South Africa',
         Sudan: 'Sudan',
+        Saudi_Arabia: 'Saudi Arabia',
         Turkmenistan: 'Turkmenistan',
         Uzbekistan: 'Uzbekistan'
     };
