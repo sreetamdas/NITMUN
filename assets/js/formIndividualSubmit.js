@@ -10,11 +10,11 @@ $(document).ready(function () {
 
     var prefListSC = {
         NIL: '-select-',
-        France: 'France',
-        Germany: 'Germany',
-        Iraq: 'Iraq',
-        Russia: 'Russia',
-        Syria: 'Syria',
+        Bangladesh: 'Bangladesh',
+        //Germany: 'Germany',
+        //Iraq: 'Iraq',
+        Mexico: 'Mexico',
+        //Russia: 'Russia',
         Turkey: 'Turkey'
     };
     var prefListECOSOC = {
@@ -25,28 +25,33 @@ $(document).ready(function () {
         Central_African_Republic: 'Central African Republic',
         China: "People’s Republic of China",
         DPRK: "Democratic People's Republic of Korea",
+        France: 'France',
         Ghana: 'Ghana',
         Iraq: 'Iraq',
-        Japan: 'Japan',
-        Jordan: 'Jordan',
+        //Japan: 'Japan',
+        //Jordan: 'Jordan',
         Kenya: 'Kenya',
         Kosovo: 'Kosovo',
         Kyrgyzstan: 'Kyrgyzstan',
+        Netherlands: 'Netherlands',
         Nigeria: 'Nigeria',
+        Palestine: 'Palestine',
         Portugal: 'Portugal',
         Republic_of_Korea: 'Republic of Korea',
         Russia: 'Russia',
         Serbia: 'Serbia',
         Somalia: 'Somalia',
         South_Africa: 'South Africa',
-        Sudan: 'Sudan',
         Saudi_Arabia: 'Saudi Arabia',
         Turkmenistan: 'Turkmenistan',
-        Uzbekistan: 'Uzbekistan'
+        USA: 'USA',
+        Uzbekistan: 'Uzbekistan',
+        Zimbabwe: 'Zimbabwe'
     };
     var prefListHP = {
         NIL: '-select-',
         Amycus_Carrow: 'Amycus Carrow',
+        //Arthur_Weasley: 'Arthur Weasley',
         Igor_Karkaroff: 'Igor Karkaroff',
         Sybill_Trelawney: 'Sybill Trelawney',
         Xenophilius_Lovegood: 'Xenophilius Lovegood'
@@ -322,11 +327,11 @@ $(document).ready(function () {
 
             $("iframe").load(function () {
 
+                document.getElementById('formSubmitBtn').value = 'Submitted';
+                document.getElementById('formSubmitBtn').disabled = true;
                 var dialog = document.getElementById('queryModal');
 
                 dialog.show();
-                document.getElementById("formSubmitBtn").disabled = true;
-                document.getElementById('formSubmitBtn').value = 'Submitted';
                 /*document.getElementById('queryModal').onclick = function() {
                     dialog.close();
                 };*/
