@@ -2470,6 +2470,11 @@ input[type="radio"] + label:before {
     color: gold;
 }
 
+.HarryPotterFont {
+    font-family: HarryPotter;
+    color: gold;
+}
+
 
 /* Image */
 

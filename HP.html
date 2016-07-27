@@ -40,7 +40,24 @@
 								<span class="major"><img src="images/HP.png" height=350  align="right"></span>
 								<h1 style="font-size: 3.5cm; padding-top: 1.5cm; padding-bottom: 0cm;" align="center" id="HarryPotter">Harry Potter<br><span style="font-size: 2.5cm;">Fictional Crisis Committee</span></h1>
                                 <p style="font-size: 0.6cm;">Delve into the world of one of the most beloved novels. <br>Here one will get the opportunity to explore the intricacies of the wizarding world of Harry Potter. Discuss the issues plaguing the Ministry of Magic and combat upcoming crises to restore balance in the muggle world as well as the magical one. <br>Delegates will receive the opportunity to solve problems by stepping into the shoes of important wizards, witches as well as muggles.</p>
-						
+						  <style>
+      #countdownsection span{
+        padding: 20px;
+      }
+</style>
+
+<!-- Countdown Timer  to be included where countdown is to be displayed-->
+<div id="countdownsection" style="font-size:2em"></div>
+
+
+
+<!-- Countdown script to be included at bottom of body tag in html page-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.1.0/jquery.countdown.min.js"></script>
+    <script type="text/javascript">
+     $('#countdownsection').countdown('2016/03/18', function(event) {
+       var $this = $(this).html(event.strftime(''+ '<span>%-D</span> day%!D '+ ' <span>%-H</span> hour%!H '+ ' <span>%-M</span> min%!M ' + ' <span>%S</span> sec%!S'));
+     });
+    </script>
                                 
 							</section>
                     </div>

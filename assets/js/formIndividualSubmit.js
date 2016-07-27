@@ -10,133 +10,49 @@ $(document).ready(function () {
 
     var prefListSC = {
         NIL: '-select-',
-        Canada: 'Canada',
-        China: "People's Republic of China",
-        Denmark: 'Denmark',
-        DPRK: "Democratic People's Republic of Korea",
-        Egypt: 'Egypt',
-        France: 'France',
-        Germany: 'Germany',
-        Greece: 'Greece',
-        India: 'India',
-        Iran: 'Iran',
-        Israel: 'Israel',
-        Japan: 'Japan',
-        Kazakhstan: 'Kazakhstan ',
-        Malaysia: 'Malaysia',
+        Bangladesh: 'Bangladesh',
+        //Germany: 'Germany',
+        //Iraq: 'Iraq',
         Mexico: 'Mexico',
-        Nigeria: 'Nigeria',
-        Norway: 'Norway',
-        Pakistan: 'Pakistan',
-        Philippines: 'Philippines',
-        Russia: 'Russia',
-        Saudi_Arabia: 'Saudi Arabia',
-        South_Africa: 'South Africa',
-        Sri_Lanka: 'Sri Lanka',
-        Syria: 'Syria',
-        Taiwan: 'Republic of China (Taiwan)',
-        United_Arab_Emirates: 'United Arab Emirates',
-        United_Kingdom: 'United Kingdom',
-        USA: 'United States of America',
-        Vietnam: 'Vietnam'
+        //Russia: 'Russia',
+        Turkey: 'Turkey'
     };
     var prefListECOSOC = {
         NIL: '-select-',
-        Angola: 'Angola',
         Austria: 'Austria',
-        Bahrain: 'Bahrain',
-        Bangladesh: 'Bangladesh',
-        Belgium: 'Belgium',
-        Bosnia_and_Herzegovina: 'Bosnia and Herzegovina ',
-        Brazil: 'Brazil',
+        Bosnia_and_Herzegovina: 'Bosnia and Herzegovina',
         Burundi: 'Burundi',
-        Canada: 'Canada',
         Central_African_Republic: 'Central African Republic',
         China: "People’s Republic of China",
-        Colombia: 'Colombia',
-        Congo: 'Democratic Republic of the Congo',
-        Cote_d_Ivoire: "Cote d'Ivoire",
         DPRK: "Democratic People's Republic of Korea",
-        Egypt: 'Egypt',
-        Eritrea: 'Eritrea',
-        Ethiopia: 'Ethiopia',
         France: 'France',
-        Germany: 'Germany',
         Ghana: 'Ghana',
-        Hungary: 'Hungary',
-        India: 'India',
-        Indonesia: 'Indonesia',
-        Iran: 'Iran',
         Iraq: 'Iraq',
-        Israel: 'Israel',
-        Italy: 'Italy',
-        Japan: 'Japan',
-        Jordan: 'Jordan',
-        Kazakhstan: 'Kazakhstan',
+        //Japan: 'Japan',
+        //Jordan: 'Jordan',
         Kenya: 'Kenya',
-        Kuwait: 'Kuwait',
+        Kosovo: 'Kosovo',
         Kyrgyzstan: 'Kyrgyzstan',
-        Liberia: 'Liberia',
-        Mexico: 'Mexico',
-        Nepal: 'Nepal',
         Netherlands: 'Netherlands',
-        Nicaragua: 'Nicaragua',
         Nigeria: 'Nigeria',
-        Oman: 'Oman',
-        Pakistan: 'Pakistan',
         Palestine: 'Palestine',
-        Poland: 'Poland',
         Portugal: 'Portugal',
-        Qatar: 'Qatar',
         Republic_of_Korea: 'Republic of Korea',
         Russia: 'Russia',
-        Saudi_Arabia: 'Saudi Arabia',
-        Serbia_and_Kosovo: 'Serbia and Kosovo',
-        Sierra_Leone: 'Sierra Leone',
+        Serbia: 'Serbia',
         Somalia: 'Somalia',
         South_Africa: 'South Africa',
-        Spain: 'Spain',
-        Sri_Lanka: 'Sri Lanka',
-        Sudan: 'Sudan',
-        Sweden: 'Sweden',
-        Switzerland: 'Switzerland',
-        Syria: 'Syria',
-        Turkey: 'Turkey',
+        Saudi_Arabia: 'Saudi Arabia',
         Turkmenistan: 'Turkmenistan',
-        Uganda: 'Uganda',
-        Ukraine: 'Ukraine',
-        United_Arab_Emirates: 'United Arab Emirates',
-        United_Kingdom: 'United Kingdom',
-        USA: 'United States of America',
+        USA: 'USA',
         Uzbekistan: 'Uzbekistan',
-        Vietnam: 'Vietnam',
-        Yemen: 'Yemen',
         Zimbabwe: 'Zimbabwe'
     };
     var prefListHP = {
         NIL: '-select-',
-        Aberforth_Dumbeldore: 'Aberforth Dumbeldore',
-        Alastor_Moody: 'Alastor Moody',
-        Albus_Dumbeldore: 'Albus Dumbeldore',
-        Amelia_Bones: 'Amelia Bones',
         Amycus_Carrow: 'Amycus Carrow',
-        Antonin_Dolohov: 'Antonin Dolohov',
-        Arthur_Weasley: 'Arthur Weasley',
-        Bartemius_Crouch_Sr: 'Bartemius Crouch Sr.',
-        Bellatrix_Lestrange: 'Bellatrix Lestrange',
-        Cornelius_Fudge: 'Cornelius Fudge',
-        Dolorus_Umbridge: 'Dolorus Umbridge',
-        Horace_Slughorn: 'Horace Slughorn',
+        //Arthur_Weasley: 'Arthur Weasley',
         Igor_Karkaroff: 'Igor Karkaroff',
-        Kingsley_Shacklebolt: 'Kingsley Shacklebolt',
-        Lucius_Malfoy: 'Lucius Malfoy',
-        Minerva_McGonagal: 'Minerva McGonagall',
-        Perciville_Weasley: 'Percival Weasley',
-        Remus_Lupin: 'Remus Lupin',
-        Rubeus_Hagrid: 'Rubeus Hagrid',
-        Rufus_Scrimgeour: 'Rufus Scrimgeour',
-        Severus_Snape: 'Severus Snape',
-        Sirius_Black: 'Sirius Black',
         Sybill_Trelawney: 'Sybill Trelawney',
         Xenophilius_Lovegood: 'Xenophilius Lovegood'
     };
@@ -404,18 +320,18 @@ $(document).ready(function () {
 
         var submitURL = (baseURL + nameID + name + emailID + email + contactNumberID + contactNumber + collegeID + college + courseID + course + yearID + year + cityID + city + emNameID + emName + emRelationID + emRelation + emContactID + emContact + councilID + council + pref1ID + pref1 + pref2ID + pref2 + pref3ID + pref3 + council_2ID + council_2 + pref1_2ID + pref1_2 + pref2_2ID + pref2_2 + pref3_2ID + pref3_2 + prevAttID + prevAtt + AccMealsID + AccMeals + experienceID + experience + submitRef);
 
-        if ((name != "") && (email != "") && (contactNumber != "") && (college != "") && (college != "") && (course != "") && (city != "") && (emContact != "") && (experience != "")) {
+        if ((name != "") && (email != "") && (contactNumber != "") && (college != "") && (college != "") && (course != "") && (city != "") && (emContact != "") && (experience != "") && (pref1 != "") && (pref2 != "") && (pref3 != "") && (pref1_2 != "") && (pref2_2 != "") && (pref3_2 != "")) {
 
             console.log(submitURL);
             $(this)[0].action = submitURL;
 
             $("iframe").load(function () {
 
+                document.getElementById('formSubmitBtn').value = 'Submitted';
+                document.getElementById('formSubmitBtn').disabled = true;
                 var dialog = document.getElementById('queryModal');
 
                 dialog.show();
-                document.getElementById("formSubmitBtn").disabled = true;
-                document.getElementById('formSubmitBtn').value = 'Submitted';
                 /*document.getElementById('queryModal').onclick = function() {
                     dialog.close();
                 };*/
