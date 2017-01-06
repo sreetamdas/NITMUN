@@ -1,0 +1,8 @@
+.right-floated {
+    float: right !important;
+}
+
+textarea {
+    color: white;
+    font-weight: 500;
+}
