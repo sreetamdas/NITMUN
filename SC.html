@@ -13,23 +13,7 @@
 		<div id="page-wrapper">
 
 
-				<header id="header" style="position: fixed; background: #1c1d26;">
-                    <a href="index.html" style="border-bottom: none; display: inline-block; margin-left: 0.5cm"><img src="images/NITMUN-logo.png" height="61"/></a>
-                    <a href="index.html"><h1 style="margin-left: 3cm;" class="logo">NIT Warangal Model United Nations</h1></a>
-					<nav id="nav">
-						<ul>
-
-
-							<li><a href="#" class="button special">Register</a>
-                            <ul>
-															<li><a href="RegComingSoon.html">Dais Member</a></li>
-															<li><a href="RegComingSoon.html">International Press</a></li>
-															<li><a href="RegComingSoon.html">Delegate</a></li>
-                            </ul>
-                            </li>
-						</ul>
-					</nav>
-				</header>
+				<div id="header-top"></div>
 
 
 						<!-- Form -->
@@ -38,11 +22,13 @@
 							<div class="row uniform">
 							<section style="padding-top: 2.1cm;" class="12u$ 12u$(medium) 12u$(xsmall)" id="Committee_SC">
 									<span class="major"><img src="images/SC.png" height=350  align="right" style="margin-bottom: 0.5cm;"></span>
-								<h1 style="font-size: 2.9cm; padding-top: 2cm; padding-bottom: 0cm;" align="center">Security Council</h1>
-                                <p style="font-size: 0.6cm;">Historically one of the most influential, controversial, politicized, and powerful committees at the United Nations, the Security Council has traditionally been the committee for the best and brightest delegates. The United Nations Security Council (UNSC) is one of the six principal organs of the United Nations and is charged with the maintenance of international peace and security as well as accepting new members to the United Nations and approving any changes to its United Nations Charter.</p>
+								<h1 style="font-size: 2.9cm; padding-top: 2cm; padding-bottom: 0cm;" align="center">UNSC</h1>
+                                <p style="font-size: 0.6cm;">As the single most powerful UN entity, the Security Council is responsible for addressing all issues threatening international peace and security. <br><br>The Security Council must work to create effective resolutions with clear and powerful language that will have tangible results in the real world. In facing this immense responsibility, the committee will utilize several tools of diplomacy usually unavailable to any other agency.  The veto power of the Permanent Five (P5) members gives the UNSC a uniquely intense flair that is unlike any other committee.</p>
 
+<!--
                                 <h1 style="font-size: 1.5cm; padding-top: 1cm; padding-bottom: 0cm;">Agenda</h1>
                                 <p class="SSDate"><em>"Resolving territorial conflicts with the establishment and reform of policies"</em></p>
+-->
 
 
 							</section>
@@ -50,13 +36,7 @@
                 </div>
             </div>
 			<!-- Footer -->
-				<footer id="footer">
-
-					<ul class="copyright">
-						<li>&copy; NITMUN'16. All rights reserved.</li><li>Made by <a href="http://bit.do/sreetamdas">Sreetam Das</a> with <a href="http://bit.do/html5up">HTML5 UP</a></li>
-					</ul>
-				</footer>
-
+				<div id="footer"></div>
 		</div>
 
 		<!-- Scripts -->
@@ -70,6 +50,14 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
+    <script>        
+        $(function () {
+            //  $("#header").load("header.html");
+            $("#footer").load("footer.html");
+            $("#header-top").load("header.html");
+            
+        });
+    </script>
 
 
 	</body>

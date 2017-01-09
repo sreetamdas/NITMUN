@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Security Council</title>
+		<title>SOCHUM</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -13,49 +13,28 @@
 		<div id="page-wrapper">
 
 
-				<header id="header" style="position: fixed; background: #1c1d26;">
-                    <a href="index.html" style="border-bottom: none; display: inline-block; margin-left: 0.5cm"><img src="images/NITMUN-logo.png" height="61"/></a>
-                    <a href="index.html"><h1 style="margin-left: 3cm;" class="logo">NIT Warangal Model United Nations</h1></a>
-					<nav id="nav">
-						<ul>
-
-
-							<li><a href="#" class="button special">Register</a>
-                            <ul>
-															<li><a href="RegComingSoon.html">Dais Member</a></li>
-															<li><a href="RegComingSoon.html">International Press</a></li>
-															<li><a href="RegComingSoon.html">Delegate</a></li>
-                            </ul>
-                            </li>
-						</ul>
-					</nav>
-				</header>
-
-
+				<div id="header-top"></div>
 						<!-- Form -->
             <div class="container">
                 <div class="box alt no-border">
 							<div class="row uniform">
 							<section style="padding-top: 2.1cm;" class="12u$ 12u$(medium) 12u$(xsmall)" id="Committee_ECOSOC">
 									<span class="major" align="right"><img src="images/ECOSOC.png" height=350 align="right"></span>
-								<h1 style="font-size: 3.5cm; padding-top: 2cm; padding-bottom: 0cm;" align="center">ECOSOC</h1>
-                                <p style="font-size: 0.6cm;">The Council serves as the main forum for discussion of international economic, social, cultural and health issues, as well as human rights and fundamental freedoms. The Economic and Social Council, an organ of the United Nations, seeks to attain sustainable development. The ECOSOC is a platform in which international social and economic issues are addressed as well as international development goals are discussed and agreed.</p>
+								<h1 style="font-size: 3.5cm; padding-top: 2cm; padding-bottom: 0cm;" align="center">SOCHUM</h1>
+                                <p style="font-size: 0.6cm;">The Social, Humanitarian and Cultural Committee (SOCHUM) is the third General Assembly of the United Nations, tasked with a broad mandate surrounding social, humanitarian and human rights issues from around the world.<br><br>To delineate a general idea of the committee, some issues discussed within SOCHUM include but are not limited to: human rights, global literacy, women’s rights, children’s rights, the treatment of refugees and displaced persons, international drug control, crime prevention, and the elimination of racism and discrimination. SOCHUM also works closely with many other UN bodies in order to effectually address its mandated issues.</p>
 
+<!--
                                 <h1 style="font-size: 1.5cm; padding-top: 1cm; padding-bottom: 0cm;">Agendas</h1>
                                 <p class="SSDate"><em>"Addressing the right to freedom of expression of religion and prevent agitation arising due to religious tensions"</em></p>
                                 <p class="SSDate"><em>"Realization of rights of human refugees and resolving destabilization"</em></p>
+-->
 
 							</section>
                     </div>
                 </div>
             </div>
 			<!-- Footer -->
-				<footer id="footer">
-
-					<ul class="copyright">
-						<li>&copy; NITMUN'16. All rights reserved.</li><li>Made by <a href="http://bit.do/sreetamdas">Sreetam Das</a> with <a href="http://bit.do/html5up">HTML5 UP</a></li>
-					</ul>
-				</footer>
+			<div id="footer"></div>
 
 		</div>
 
@@ -69,7 +48,14 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+        <script>
+             $(function () {
+            //  $("#header").load("header.html");
+            $("#footer").load("footer.html");
+            $("#header-top").load("header.html");
+            
+        });
+        </script>
 
 
 	</body>

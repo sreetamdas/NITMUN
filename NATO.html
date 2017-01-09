@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Harry Potter Fictional Crisis Committee</title>
+		<title>NATO</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -12,24 +12,8 @@
 	<body>
 		<div id="page-wrapper">
 
-
-				<header id="header" style="position: fixed; background: #1c1d26;">
-                    <a href="index.html" style="border-bottom: none; display: inline-block; margin-left: 0.5cm"><img src="images/NITMUN-logo.png" height="61"/></a>
-                    <a href="index.html"><h1 style="margin-left: 3cm;" class="logo">NIT Warangal Model United Nations</h1></a>
-					<nav id="nav">
-						<ul>
-
-
-							<li><a href="#" class="button special">Register</a>
-                            <ul>
-															<li><a href="RegComingSoon.html">Dais Member</a></li>
-															<li><a href="RegComingSoon.html">International Press</a></li>
-															<li><a href="RegComingSoon.html">Delegate</a></li>
-                            </ul>
-                            </li>
-						</ul>
-					</nav>
-				</header>
+            <div id="header-top"></div>
+			
 
 
 						<!-- Form -->
@@ -37,9 +21,10 @@
                 <div class="box alt no-border">
 							<div class="row uniform">
 							<section style="padding-top: 2.1cm;" class="12u$ 12u$(medium) 12u$(xsmall)" id="Committee_HP">
-								<span class="major"><img src="images/HP.png" height=350  align="right"></span>
-								<h1 style="font-size: 3.5cm; padding-top: 1.5cm; padding-bottom: 0cm;" align="center" id="HarryPotter">Harry Potter<br><span style="font-size: 2.5cm;">Fictional Crisis Committee</span></h1>
-                                <p style="font-size: 0.6cm;">Delve into the world of one of the most beloved novels. <br>Here one will get the opportunity to explore the intricacies of the wizarding world of Harry Potter. Discuss the issues plaguing the Ministry of Magic and combat upcoming crises to restore balance in the muggle world as well as the magical one. <br>Delegates will receive the opportunity to solve problems by stepping into the shoes of important wizards, witches as well as muggles.</p>
+								<span class="major"><img src="images/NATO.png" height=350  align="right"></span>
+								<h1 style="font-size: 3.5cm; padding-top: 1.5cm; padding-bottom: 0cm;" align="center">NATO</h1>
+                                <p style="font-size: 0.6cm;"><strong style="font-weight: 800">Freeze Date-April 4,1949.</strong><br><br><br>
+The North Atlantic Treaty Organization, or Organisation du traité de l’Atlantique Nord is the military alliance between various governments throughout the globe, though it mostly consists of European countries. <br><br>The core point of the NATO is that the Organization, as a whole, responds to any attack that is carried out against a member country; hence rendering it possibly the strongest intergovernmental organization in the world regarding military aspects.Even though the NATO was first formed as political institution; following the Korean War, it quickly became a military alliance that has over 70 percent of the global military spendings across its members.In 1949, the prospect of further Communist expansion prompted the United States and 11 other Western nations to form the North Atlantic Treaty Organization (NATO). <br><br>The Soviet Union and its affiliated Communistnations in Eastern Europe founded a rival alliance, the Warsaw Pact, in 1955. The alignment of nearly every European nation into one of the two opposing camps formalized the political division of the European continent that had taken place since World War II (1939-45). This alignment provided the framework for the military standoff that continued throughout the Cold War (1945-91).</p>
 						  <style>
       #countdownsection span{
         padding: 20px;
@@ -64,13 +49,7 @@
                 </div>
             </div>
 			<!-- Footer -->
-				<footer id="footer">
-
-					<ul class="copyright">
-						<li>&copy; NITMUN'16. All rights reserved.</li><li>Made by <a href="http://bit.do/sreetamdas">Sreetam Das</a> with <a href="http://bit.do/html5up">HTML5 UP</a></li>
-					</ul>
-				</footer>
-
+				<div id="footer"></div>
 		</div>
 
 		<!-- Scripts -->
@@ -83,7 +62,14 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+<script>
+         $(function () {
+            //  $("#header").load("header.html");
+            $("#footer").load("footer.html");
+            $("#header-top").load("header.html");
+            
+        });
+        </script>
 
 
 	</body>
