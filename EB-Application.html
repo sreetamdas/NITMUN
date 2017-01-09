@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Registration for NITMUN'17</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+
+<body>
+    <div id="page-wrapper">
+
+        <div id="header-top"></div>
+
+
+        <!-- Form -->
+        <div class="container">
+
+            <section>
+
+                <h1 style="font-size: 5.5rem; padding-top: 5rem;">Executive Board Applications</h1>
+                <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzbdjkrTPoVbUmU2nHwoV99s1qnayGNb9kcewbFWnlsEpdywoOt/exec">
+                    <div class="row uniform 50%">
+                        <div class="2u 0u$(xsmall)"></div>
+                        <div class="1u 0u$(xsmall)">
+                            <h4 class=" right-floated" style="padding-top: 13px;">Name : </h4></div>
+                        <div class="6u$ 12u$(xsmall)">
+
+                            <input type="text" name="Name" id="Name" value="" placeholder="Name" required/>
+                        </div>
+                        <div class="2u 0u$(xsmall)"></div>
+                        <div class="1u 0u$(xsmall)">
+                            <h4 class=" right-floated" style="padding-top: 13px;">Email : </h4></div>
+                        <div class="6u$ 12u$(xsmall)">
+                            <input type="email" name="Email" id="email" value="" placeholder="Email" required/>
+                        </div>
+                        <div class="1u 0u$(xsmall)"></div>
+                        <div class="2u 0u$(xsmall)">
+                            <h4 class=" right-floated" style="padding-top: 13px;">Contact Number : </h4></div>
+                        <div class="6u$ 12u$(xsmall)">
+                            <input type="text" name="Contact" id="contactNumber" value="" placeholder="Contact Number" required/>
+                        </div>
+                        <div class="1u 0u$(xsmall)"></div>
+                        <div class="2u 0u$(xsmall)">
+                            <h4 class=" right-floated" style="padding-top: 13px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;College : </h4></div>
+                        <div class="6u$ 12u$(xsmall)">
+                            <input type="text" name="College" id="College" value="" placeholder="College" required/>
+                        </div>
+                        <div class="4u 12u$(xsmall)" style="margin-left: 2cm;">
+                            <input type="text" name="Course" id="course" value="" placeholder="Course" required/>
+                        </div>
+                        <div class="3u 12u$(xsmall)">
+                            <input type="text" name="Year" id="year" value="" placeholder="Year of Study" />
+                        </div>
+                        <div class="4u$ 12u$(xsmall)">
+                            <input type="text" name="City" id="city" value="" placeholder="City" required/>
+                        </div>
+
+
+
+                        <h4 style="padding-top: 33px;">Emergency Contact : </h4>
+                        <div class="4u 12u$(xsmall)">
+                            <input type="text" name="Emergency Contact Name" id="emName" value="" placeholder="Name" />
+                        </div>
+                        <div class="3u 12u$(xsmall)">
+                            <input type="text" name="Emergency Contact Relation" id="emRelation" value="" placeholder="Relation" />
+                        </div>
+                        <div class="3u$ 12u$(xsmall)">
+                            <input type="text" name="Emergency Contact Number" id="emContact" value="" placeholder="Contact Number" required/>
+                        </div>
+
+
+                        <h4 style="margin-top: 7px; padding-right: 3cm;">Select Preference for Council/ Committee : </h4>
+                        <div class="4u$ 12u$(xsmall)">
+                            <div class="select-wrapper">
+                                <select name="Council" id="council">
+                                    <option value="">-Select-</option>
+                                    <option value="SC">Security Council</option>
+                                    <option value="SOCHUM">SOCHUM</option>
+                                    <option value="NATO">Formation of NATO</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <h4 style="margin-top: 7px; padding-right: 2cm;">Reason for preference : </h4>
+                        <div class="7u$ 12u$(medium) SC_dialog">
+                            <textarea name="Reason for preference" id="reason" placeholder="Reason for preference" rows="6"></textarea>
+                        </div>
+                        <div class="6u$ 12u$(medium)">
+                            <input type="checkbox" id="previouslyAttended" name="Can bring a delegation">
+                            <label for="previouslyAttended">Can get a delegation (min. 3 delegates)</label>
+                        </div>
+
+                        <h4 style="margin-top: 30px;">Previousy attended MUNs and awards received : </h4>
+                        <div class="7u$ 12u$(medium)">
+                            <textarea name="MUN Experience" id="experience" placeholder="Previous experience in MUNs" rows="6"></textarea>
+                        </div>
+                        
+<!--
+                        <div class="12u$" align="center" style="padding-top: 11cm">
+                            <ul class="actions">
+                                <li>
+                                    <input type="submit" value="Proceed" class="special" id="formSubmitBtn" />
+                                </li>
+                                <li>
+                                    <input type="reset" value="Reset" />
+                                </li>
+                            </ul>
+                            <p>Part 1 of 2</p>
+                        </div>
+-->
+                        <div class="12u$ text-center" align="center">
+                            <input type="submit">
+                            <p style="color: #33ffff; padding-top: 2em; font-size: 18px; font-weight: 700;">ALL FIELDS ARE COMPULSORY.
+                                <br>After submitting, please DO NOT REFRESH until you receive confirmation that the form has been submitted succesfully.</p>
+                        </div>
+                    </div>
+                </form>
+                <div style="display: none" class="text-center" id="thankyou_message">
+                <h2>Your application has been successfully submitted.</h2>
+            </div>
+
+
+            </section>
+        </div>
+        <!-- Footer -->
+        <div id="footer"></div>
+    </div>
+
+    <!-- Scripts -->
+    <!--
+            <script>
+                CharacterCount = function(TextArea,FieldToCount){
+	var myField = document.getElementById(TextArea);
+	var myLabel = document.getElementById(FieldToCount); 
+	if(!myField || !myLabel){return false}; // catches errors
+	var MaxChars =  myField.maxLengh;
+	if(!MaxChars){MaxChars =  myField.getAttribute('maxlength') ; }; 	if(!MaxChars){return false};
+	var remainingChars =   MaxChars - myField.value.length
+	myLabel.innerHTML = remainingChars+" Characters Remaining"
+}
+
+
+setInterval(function(){CharacterCount('HP_Q','divHP_Q')},55);
+setInterval(function(){CharacterCount('reason','divreason')},55);
+setInterval(function(){CharacterCount('experience','divexperience')},55);
+                
+                
+    
+            </script>
+-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/formHandler.js"></script>
+
+    <script>
+        $(function () {
+            //  $("#header").load("header.html");
+            $("#footer").load("footer.html");
+            $("#header-top").load("header.html");
+
+        });
+    </script>
+
+</body>
+
+</html>

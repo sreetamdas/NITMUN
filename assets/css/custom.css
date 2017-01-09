@@ -6,3 +6,15 @@ textarea {
     color: white;
     font-weight: 500;
 }
+
+.text-center {
+    text-align: center !important;
+}
+
+.no-underline a {
+border-bottom: none !important
+}
+
+.no-underline a:hover {
+    text-decoration: none !important;
+}
