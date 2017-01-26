@@ -24,8 +24,9 @@
 
             <section>
 
-                <h1 style="font-size: 5.5rem; padding-top: 5rem;">Executive Board Applications</h1>
-                <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzbdjkrTPoVbUmU2nHwoV99s1qnayGNb9kcewbFWnlsEpdywoOt/exec">
+                <h1 style="font-size: 5.5rem; padding-top: 5rem;">Delegate Applications</h1>
+                <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwkj0zZIw7uvbN_Z6c3W-croIgn9wa_FtbPIi7SCuJJdvRGAspu/exec">
+<!--                    https://script.google.com/macros/s/AKfycbwkj0zZIw7uvbN_Z6c3W-croIgn9wa_FtbPIi7SCuJJdvRGAspu/exec-->
                     <div class="row uniform 50%">
                         <div class="2u 0u$(xsmall)"></div>
                         <div class="1u 0u$(xsmall)">
@@ -76,25 +77,100 @@
                         </div>
 
 
-                        <h4 style="margin-top: 7px; padding-right: 3cm;">Select Preference for Council/ Committee : </h4>
+                        <h4 style="margin-top: 7px; padding-right: 3cm;">Select 1st Preference for Council/ Committee : </h4>
                         <div class="4u$ 12u$(xsmall)">
                             <div class="select-wrapper">
-                                <select name="Council" id="council">
+                                <select name="Council/ Committee-1" id="council" required>
                                     <option value="">-Select-</option>
                                     <option value="SC">Security Council</option>
                                     <option value="SOCHUM">SOCHUM</option>
-                                    <option value="NATO">Formation of NATO</option>
+                                    <option value="NATO">NATO</option>
                                 </select>
                             </div>
                         </div>
 
-                        <h4 style="margin-top: 7px; padding-right: 2cm;">Reason for preference : </h4>
-                        <div class="7u$ 12u$(medium) SC_dialog">
-                            <textarea name="Reason for preference" id="reason" placeholder="Reason for preference" rows="6"></textarea>
+                        <!-- -------------------------------------------------   -->
+
+                        <h4 style="margin-top: 7px; padding-right: 2cm">Select Preference : </h4>
+
+                        <div class="3u 12u$(xsmall) SC_dialog">
+                            <div class="select-wrapper">
+                                <select name="Country Preference-11" id="pref1" required>
+                                    <option value="">-Select 1st preference-</option>
+                                    <option value="">-Select-</option>
+                                </select>
+                            </div>
                         </div>
+                        <div class="3u 12u$(xsmall) SC_dialog">
+                            <div class="select-wrapper">
+                                <select name="Country Preference-12" id="pref2" required>
+                                    <option value="">-Select 2nd preference-</option>
+                                    <option value="">-Select-</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="3u$ 12u$(xsmall) SC_dialog">
+                            <div class="select-wrapper">
+                                <select name="Country Preference-13" id="pref3" required>
+                                    <option value="">-Select 3rd preference-</option>
+                                    <option value="">-Select-</option>
+                                </select>
+                            </div>
+                        </div>
+                        <h4 style="margin-top: 7px; padding-right: 3cm;">Select 2nd Preference for Council/ Committee : </h4>
+                        <div class="4u$ 12u$(xsmall)">
+                            <div class="select-wrapper">
+                                <select name="Council/ Committee-2" id="council_2" required>
+                                    <option value="">-Select-</option>
+                                    <option value="SC">Security Council</option>
+                                    <option value="SOCHUM">SOCHUM</option>
+                                    <option value="NATO">NATO</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--          <div class="2u$ 12u$(xsmall)">
+											<input type="submit" value="Select Committee" class="special" id="formSubmitBtn"/>
+												
+										</div>
+                <!-- -------------------------------------------------   -->
+
+                        <h4 style="margin-top: 7px; padding-right: 2cm">Select Preference : </h4>
+
+                        <div class="3u 12u$(xsmall) SC_dialog">
+                            <div class="select-wrapper">
+                                <select name="Country Preference-21" id="pref1_2" required>
+                                    <option value="">-Select 1st preference-</option>
+                                    <option value="">-Select-</option>>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="3u 12u$(xsmall) SC_dialog">
+                            <div class="select-wrapper">
+                                <select name="Country Preference-22" id="pref2_2" required>
+                                    <option value="">-Select 2nd preference-</option>
+                                    <option value="">-Select-</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="3u$ 12u$(xsmall) SC_dialog">
+                            <div class="select-wrapper">
+                                <select name="Country Preference-23" id="pref3_2" required>
+                                    <option value="">-Select 3rd preference-</option>
+                                    <option value="">-Select-</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="2u"></div>
+<!--
+                        <div class="4u 12u$(medium)">
+                            <input type="checkbox" id="get-a-delegation" name="Can bring a delegation">
+                            <label for="get-a-delegation">Can get a delegation (min. 3 delegates)</label>
+                        </div>
+-->
                         <div class="6u$ 12u$(medium)">
-                            <input type="checkbox" id="previouslyAttended" name="Can bring a delegation">
-                            <label for="previouslyAttended">Can get a delegation (min. 3 delegates)</label>
+                            <input type="checkbox" id="acco" name="On Campus Accommodation and Meals" value="yes">
+                            <label for="acco">On Campus Accommodation and Meals</label>                            
+                            <input type="hidden" name="On Campus Accommodation and Meals" value="no">
                         </div>
 
                         <h4 style="margin-top: 30px;">Previously attended MUNs and awards received : </h4>
@@ -115,6 +191,11 @@
                             <p>Part 1 of 2</p>
                         </div>
 -->
+                        <div class="4u 0u$(xsmall)"></div>
+                        <div class="4u$ 12u$(xsmall) no-border">
+                            <input type="checkbox" id="TCs" name="TCs" required>
+                            <label for="TCs">I hereby agree to the <a href="Terms&Conditions.html">Terms & Conditions</a>.</label>
+                        </div>
                         <div class="12u$ text-center" align="center">
                             <input type="submit">
                             <p style="color: #33ffff; padding-top: 2em; font-size: 18px; font-weight: 700;">ALL FIELDS ARE COMPULSORY.
@@ -164,6 +245,8 @@ setInterval(function(){CharacterCount('experience','divexperience')},55);
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/formHandler.js"></script>
+    <script src="assets/js/delegate.js"></script>
+    
 
     <script>
         $(function () {
